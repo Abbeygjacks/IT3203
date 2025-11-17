@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soap | Chase 'n Grace Farm</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="C:\Users\abbag\Downloads\favicon.ico">
+</head>
+<body>
+
+<!-- SHARED HEADER / NAVBAR (same structure as index.html) -->
+
+<header>
+  <img src="C:\Users\abbag\Downloads\Chase n grace farm logo.png" alt="Chase 'n Grace Farm Logo">
+  <nav>
+    <ul>
+      <li><a href="index.html#Home"><b>Home</b></a></li>
+      <li><a href="index.html#About"><b>Our Story</b></a></li>
+      <li><a href="index.html#Products"><b>Products</b></a></li>
+      <li><a href="index.html#Gallery"><b>Gallery</b></a></li>
+      <li><a href="index.html#Contact"><b>Contact Us</b></a></li>
+      <li><a href="quiz.html"><b>Quiz</b></a></li>
+      <li><a href="index.html#AboutMe"><b>About Me</b></a></li>
+      <li><a href="index.html#KeyConcepts"><b>Key Concepts</b></a></li>
+      <li><a href="index.html#References"><b>References</b></a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Spacer so content is not hidden behind fixed navbar -->
+
+<div style="height: 120px;"></div>
+
+<!-- PRODUCT HERO SECTION: SOAP                    -->
+<section style="padding: 3rem 2rem; max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+  
+  <!-- LEFT: Product image -->
+  <div style="flex: 1 1 400px;">
+    <img src="c:\Users\abbag\Downloads\received_721584050254584.jpeg" alt="Soap">
+  </div>
+
+  <!-- RIGHT: Product information -->
+  <div style="flex: 1 1 400px; text-align: left;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Soap </h1>
+    <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+      Handmade lavender soap from Chase 'n Grace Farm.
+    </p>
+
+    <p style="font-size: 1.2rem; margin-bottom: 1rem;">
+      <b>Price:</b> $5
+    </p>
+
+    <p style="font-size: 1rem; margin-bottom: 2rem;">
+      To purchase, please reach out to us directly. We're happy to help you
+        find the right amount of soap for your needs.
+    </p>
+
+    <!-- Buttons: contact + back to products -->
+
+      <div style="flex: 1 1 400px; text-align: left;">
+        <div style="text-align:center; margin-top: 1.5rem;">
+      <!-- Buttons: contact + back to products -->
+      <button onclick="window.location.href='index.html#Contact'">Contact to Purchase</button>
+      <button onclick="window.location.href='index.html#Products'">Back to Products</button>
+    </div>
+    </div>
+</section>
+
+<!-- SHARED FOOTER                                             -->
+
+<footer>
+  <p>This website is a class project for IT3203: Intro to Web Development |
+    <a href="https://ksuweb.github.io/IT3203/" target="_blank">Course Site</a></p>
+</footer>
+
+<!-- NAVBAR SCROLL COLOR SCRIPT (same behavior as homepage)    -->
+
+<script>
+  // changes navbar background and link colors based on scroll position
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 80) {
+      header.style.backgroundColor = 'rgba(250, 249, 247, 0.95)';
+      document.querySelectorAll('nav a').forEach(a => a.style.color = '#5c5447');
+    } else {
+      header.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
+      document.querySelectorAll('nav a').forEach(a => a.style.color = '#ffffff');
+    }
+  });
+</script>
+
+</body>
+</html>

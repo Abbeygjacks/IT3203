@@ -17,17 +17,25 @@ a {
   color: white;
 }
 
+/* prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+}
+
 /* ---------- HEADER / NAV ---------- */
 header {
-  position: absolute;
-  top: 0;
+  position: fixed; /* makes header overlay hero image */
+  top: 0; 
   left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
-  z-index: 10;
+  padding: 1rem 3rem;;
+  z-index: 1000; /* keeps the nav on top of other content */
+  background-color: rgba(250, 249, 247, 0.95); /* semi-transparent background */
+  border-bottom: 1px solid #d8d3c4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* subtle shadow */
   background: rgba(0, 0, 0, 0.2); /* transparent overlay */
 }
 header img {
@@ -40,10 +48,13 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 2rem;
+  margin: 0;
 }
 nav a {
+  color: #ffffff;
   font-weight: 500;
   font-size: 1rem;
+  text-decoration: none;
   transition: color 0.3s;
 }
 nav a:hover {
@@ -235,14 +246,14 @@ button:hover {
 
 
 
-/* ---------- GALLERY ---------- */
-#Gallery {
+/* ---------- MOTIONGALLERY ---------- */
+#MotionGallery {
     padding: 4rem 1rem; 
     background-color: #ebe3d4;
     text-align: center;
 }
 
-#Gallery h2 {
+#MotionGallery h2 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
@@ -250,18 +261,14 @@ button:hover {
     margin-bottom: 0.5rem;
 }
 
-#Gallery p {
-    text-align: center; 
-    font-size: 1.1rem; 
-    line-height: 1.6; 
-    margin-bottom: 2.5rem; 
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+#MotionGallery p {
+    font-size: 1.1rem;
+    color: #5c5447;
+    margin-bottom: 3rem;
 }
 
 /* --- Gallery Grid Layout --- */
-.gallery-grid {
+.scroll-gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto auto auto; 
@@ -272,21 +279,37 @@ button:hover {
     justify-items: center; 
 }
 
-
-.main-photo {
-    grid-column: 2 / span 3;
-    grid-row: 1 / span 3;
-    z-index: 10; 
-    max-width: 450px; 
-    border-radius: 50%; /* oval look */
-    overflow: hidden; 
+/* inner container moves horizontally */
+.scroll-gallery-track {
+    display: flex;
+    width: max-content; /*exapnds as wide as image*/
+    animation: scrollMotion 40s linear infinite; /*moves left continuously*/
+    will-change: transform; /* performance optimization */
 }
 
-.main-photo img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 0; 
+/* style for image in motion gallery */
+.scroll-gallery-track img {
+    height: 300px; /* sets a consisitent height for all images */
+    margin: 0 1rem; /* sets space for each image */
+    border-radius: 12px; /* rounded corners */
+    object-fit: cover; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* shadow effect */
+    transition: transform 0.4s ease; /* smooth zoom effect */
+}
+
+/* zoom effect when hovering over images */
+.scroll-gallery-track img:hover {
+    transform: scale(1.05);
+}
+
+/* animation keyframes for horizontal scrolling effect */
+@keyframes scrollMotion {
+    from {
+        transform: translateX(0); /* start at normal position */
+    }
+    to {
+        transform: translateX(-50%); /* looping effect by moving left */
+    }
 }
 
 
