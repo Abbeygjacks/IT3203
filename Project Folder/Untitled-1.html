@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- <html> <!-- Root element -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tile</title>
+</head>
+<body>
+    <h1>First Heading</h1>
+    <h2>Second Heading</h2>
+    <h3>Third Heading</h3>
+    <h4>Fourth Heading</h4>
+    <h5>Fifth Heading</h5>
+    <h6>Sixth Heading</h6>
+    <p>This is a paragraph.</p>
+    <a href="https://kennesaw.view.usg.edu/d2l/home">This link goes to KSU D2L</a>
+    <img src="c:\Users\abbag\Downloads\Scrappy.jpg" alt="Kennesaw State University Scrappy" width="142" height="142">
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chase 'n Grace Farm</title>
+<style>
+     img {
+        width: 100%;   /* makes the image as wide as the screen */
+        height: auto;  /* keeps the correct aspect ratio */
+        display: block; /* removes tiny gaps under images */
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    div {
+        background-color: #abddca;
+    }
+    .city {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+    }
+/* class 10/6 */
+    p{ 
+    background-color: #f54927;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: #e13db8;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    }
+#div1{
+    height: 100px;
+    width: max(50%, 300px);
+    border: 1px solid black;
+    padding: 10px;
+}
+#demo{color:blue;}
+.test{color:green}
+p{color:red;}
+
+label{display:block;}
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+/* java in class 10/8 */
+
+
+
+</style>
+</head>
+<body>
+    <img src="C:\Users\abbag\Downloads\DSC_0100 (2).JPG" alt="Farm Image">
+    <h2>HTML Table</h2>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>Chase 'n Grace Farm</td>
+            <td>Chatsworth, GA</td>
+            <td>+1 (555) 123-4567</td>
+        </tr>
+        <tr>
+            <td>Another Farm</td>
+            <td>Smith</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Third Farm</td>
+            <td>Johnson</td>
+            <td>UK</td>
+        </tr>
+    </table>
+        <h1>HTML DIV Example</h1>
+        <div>
+            <h1>This is a heading inside a div element.</h1>
+            <p>This is a paragraph inside a div element.</p>
+        </div>
+        <p>This is a paragraph outside the div element.</p>
+    <div class = "city">
+        <h1>This is a heading inside a city div element.</h1>
+        <p>This is a paragraph inside a city div element.</p>
+    <div class = "city">
+        <h1>This is another heading inside a city div element.</h1>
+        <p>This is another paragraph inside a city div element.</p>
+    </div>
+
+    <p> Here is a quote from Kennesaw:</p>
+    <blockquote cite="https://www.kennesaw.edu/">
+        Kennesaw State is a Carnegie-deisgned doctoral research institution (R2), placing it among an elite group of only 8 percent of U.S. colleges.
+    </blockquote>"
+<p>This is a paragraph</p>
+<!--
+<p>Look at this cool image:</p>
+<img border="0" scro="" alt="">
+-->
+<p>This is a paragraph too</p>
+
+<h3>The max() Function</h3>
+<p>Use max() to set the width of #div1 to whichever is largest: 50% or 300px.</p>
+<p>Resize the browser window to see the effect.</p>
+<div id="div1">This div element is 50% wide, but never smaller than 300 pixels.</div>
+
+<p id="demo" class="test">Hello world</p>.</p>
+
+<h4>Input Fields with Padding</h4>
+<form>
+    <label for ="fname">First Name</label>
+    <input type="text" id="fname" name="fname">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname">
+</form>
+
+
+
+<h1>My First JavaScript</h1>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="demo"></p>
+
+<h2>Use JavaScript to Change Text</h2>
+<p>This example write "Hello JavaScript!" into an HTML element with id="demo":</p>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+<h3>My First JavaScript</h3>
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+<script>
+function myFunction() {
+    document.getElementById("demo").style.fontSize = "25px";
+    document.getElementById("demo").style.color = "black";
+    document.getElementById("demo").style.backgroundColor = "yellow";
+}
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<h2>My First Wbe page</h2>
+<p>My First paragraph</p>
+
+<button type="button" onclick="document.write(5+6)">Try it</button>
+
+
+
+
+
+
+
+

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web page</h2>
+<p>My First paragraph</p>
+
+<button type="button" onclick="document.write(5+6)">Try it</button>
+
+<h1>My First Web page</h1>
+
+<p id = "demo"></p>
+
+<script>
+    document.getElementById("demo").innerHTML = "<h2>Hello World!</h2>";
+</script>
+
+<h1>My First Web Page</h1>
+<p>This is a paragraph too</p>
+
+<p id="demo"></p>
+
+<script>
+    document.getElementById("demo").innerText = "<h2>Hello World!</h2>";
+</script>
+
+<h1>My First Web Page</h1>
+<p>This is a paragraph too</p>
+
+<script>
+    document.write(5+6);
+</script>
+
+<h2>My First Web Page</h2>
+<p>My first paragraph</p>
+
+<script>
+    window.alert(5+6);
+</script>
+
+
+<h2>My First Web Page</h2>
+<p>My first paragraph</p>
+
+<script>
+    window.alert(5+6);
+</script>
+
+<script>
+    console.log(5+6);
+</script>
+
+
+<h1>JavaScript Variables</h1>
+
+<p>In this example, x, y, and z are variables.</p>
+
+<p id="demo"></p>
+
+<script>
+    let x = 500;
+    let y = 895;
+    let z = x + y;
+    document.getElementById("demo").innerHTML = "The value of z is: " + z;
+</script>
+
+<h1>JavaScript Variables</h1>
+
+<p>In this example, x, y, and z are variables.</p>
+
+<p id="demo"></p>
+
+<script>
+    const a = 500;
+    const b = 895;
+    const c = a + b;
+    document.getElementById("demo").innerHTML = "The value of c is: " + c;
+</script>
+
+<h1>JavaScript Variables</h1>
+
+<p>The underscore is treated as a letter in JavaScript names.</p>
+
+<p id="demo"></p>
+
+<script>
+    let _x = 2;
+    let _100 = 5;
+
+    document.getElementById("demo").innerHTML = _x + _100;
+</script>
+
+<p>The dollar sign is treated as a letter in JavaScript names.</p>
+
+<p id="demo2"></p>
+
+<script>
+    let $x = 2;
+    let $100 = 5;
+
+    document.getElementById("demo2").innerHTML = $x + $100;
+</script>
+
+<p>Values into numbers</p>
+
+<p id="demo3"></p>
+
+<script>
+    document.getElementById("demo3").innerHTML =
+    Number("3.14") + "<br>" +
+    Number(Math.PI) + "<br>" +
+    Number(" ") + "<br>" +
+    Number("99 88") + "<br>" +
+    Number("John");
+</script>
+
+<p>The String() method can convert a number to a string</p>
+
+<p id="demo4"></p>
+
+<script>
+    x = 123;
+    document.getElementById("demo4").innerHTML = 
+    String(x) + "<br>" +
+    String(123) + "<br>" +
+    String(100 + 23);
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript new Date()</h2>
+
+<p>Using new date(7 numbers) creates a new date object with the specified date and time.</p>
+
+<p id="demo5"></p>
+
+<script>
+    const d5 = new Date(2025, 11, 24, 10, 33, 30, 0);
+    document.getElementById("demo5").innerHTML = d5;
+</script>
+
+<h1>JavaScript new Date()</h1>
+
+<p>JavaScript counts months 0 to 11 </p>
+<p>Specifying a month higher than 11, will not result in an error but add the overflow to the next year:</p>
+
+<p id="demo6"></p>
+
+<script>
+    const d6 = new Date(2024, 15, 24, 10, 33, 30, 0);
+    document.getElementById("demo6").innerHTML = d6;
+</script>
+
+<h2>JavaScript new Date()</h2>
+<p>6 numbers specify year, month, day, hour, minute, and second:</p>
+
+<p id="demo7"></p>
+<script>
+    const d7 = new Date(2024, 11, 24, 10, 33, 30);
+    document.getElementById("demo7").innerHTML = d7;
+</script>
+
+<h2>JavaScript new Date()</h2>
+<p>One digit years will be interpreted  as 19xx</p>
+<p id="demo8"></p>
+<script>
+    const d8 = new Date(9, 11, 24, 10, 33, 30);
+    document.getElementById("demo8").innerHTML = d8;
+</script>
+
+<h1>JavaScript dates</h1>
+<h2>Using new date()</h2>
+
+<p>86400000 miliseconds from January 01 1970 UTC is:</p>
+<p id="demo9"></p>
+<script>
+    const d9 = new Date(86400000);
+    document.getElementById("demo9").innerHTML = d9;
+</script>
+
+<p>One day (24 hours) is 86,400,000 milliseconds</p>
+
+<h2>The toString() Method</h2>
+<p>Concert a data to a string:</p>
+<p id="demo10"></p>
+<script>
+    const d10 = new Date();
+    let text = d10.toString();
+    document.getElementById("demo10").innerHTML = text;
+</script>
+
+<h2>Using new Date()</h2>
+
+<p>new Date() without arguments, creates a data object with the current date and time.</p>
+
+<p id="demo11"></p>
+<script>
+    const d11 = new Date();
+    document.getElementById("demo11").innerHTML = d11;
+
+</script>
+
+
+
+
+
+
+
+
+<h3>JavaScript Arrays</h3>
+
+<p id="demo12"></p>
+
+<script>
+    const cars12 = [];
+    cars12[0] = "Saab";
+    cars12[1] = "Volvo";
+    cars12[2] = "BMW";
+    document.getElementById("demo12").innerHTML = cars12;
+</script>
+
+<h4>JavaScript Arrays</h4>
+<h5>Bracket Indexing</h5>
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+
+<p id="demo13"></p>
+<script>
+    const cars13= ["Saab", "Volvo", "BMW", "GMC", "Porshe", "Kia", "Nissan"];
+    document.getElementById("demo13").innerHTML = cars13[5];
+    document.getElementById("demo13").innerHTML = cars13[2];
+    document.getElementById("demo13").innerHTML = cars13[3];
+</script>
+
+<h1>JavaScript Arrays</h1>
+<h2>Bracket Indexing</h2>
+
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+
+<p id="demo14"></p>
+<script>
+    const cars14 = ["Saab", "Volvo", "BMW"];
+    cars14[0] = "Hummer";
+    document.getElementById("demo14").innerHTML = cars14;
+</script>
+
+<h1>JavaScript Arrays</h1>
+<h2>The toString() Method</h2>
+
+<p>The toString() method returns the elements of an array as a comma separated string.</p>
+
+<p id="demo15"></p>
+<script>
+    const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+
+    let myList = fruits1.toString();
+    document.getElementById("demo15").innerHTML = myList;
+</script>
+
+<h1>JavaScript Arrays</h1>
+<h2>Looping an Array</h2>
+
+<p id="demo16"></p>
+<script>
+    const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+    let fLen = fruits2.length;
+    let text1 = "<ul>";
+    for (let i = 0; i < fLen; i++) {
+        text1 += "<li>" + fruits2[i] + "</li>";
+    }
+    text1 += "</ul>";
+    document.getElementById("demo16").innerHTML = text1;
+</script>
+
+<h1>JavaScript Arrays</h1>
+<h2>Bracket Indexing</h2>
+
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+
+<p id="demo17"></p>
+<script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo17").innerHTML = fruits[fruits.length-1];
+</script>
+
+
+
+</body>
+</html>

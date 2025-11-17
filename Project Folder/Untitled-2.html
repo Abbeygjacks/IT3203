@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chase 'n Grace Farm</title>
+  <link rel="icon" type="image/x-icon" href="C:\Users\abbag\Downloads\favicon.ico">
+</head>
+
+<style>
+/* ... [Existing Gallery and Contact Styles] ... */
+
+/* --- NEW CSS FOR REQUIRED PROJECT PAGES --- */
+
+/* Generic Section Styles for consistent padding on non-full-screen sections */
+.project-page-section {
+    padding: 6rem 2rem 4rem; /* Generous top padding to clear the fixed header */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left; /* Default text alignment for lists/content */
+}
+
+/* Heading Consistency for new pages */
+.project-page-section h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #2a2a25;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Paragraph/List Text Consistency for new pages */
+.project-page-section p, 
+.project-page-section li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #2a2a25;
+    text-align: left;
+    margin-bottom: 0.8rem;
+}
+
+/* References Specific Link Style */
+.project-page-section a {
+    color: #a3917b; /* Match hover color */
+    text-decoration: underline;
+}
+
+/* Styles for circle images */
+.circular-item {
+    width: 120px;
+    height: 120px;
+    background-color: #e7dcc8; 
+    border-radius: 50%; /* Using 50% for a perfect circle */
+    overflow: hidden;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.circular-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+/* ------------------------------------------- */
+
+/* ... [Existing Footer Styles] ... */
+</style>
+
+<body>
+  <header>
+    <img src="C:\Users\abbag\Downloads\Chase n grace farm logo.png" alt="Chase 'n Grace Farm Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="our-story.html"><b>Our Story</b></a></li>
+            <li><a href="our-products.html"><b>Products</b></a></li>
+            <li><a href="key-concepts.html"><b>Key Concepts</b></a></li>
+            <li><a href="references.html"><b>References</b></a></li>
+            <li><a href="about-me.html"><b>About Me</b></a></li>
+        </ul>
+    </nav>
+  </header>
+
+<div class="hero">
+    <img src="C:\Users\abbag\Downloads\DSC_0100 (2).JPG" alt="Farm Image">
+    <div class="hero-text">
+      <h1>Welcome to Chase 'n Grace Farm</h1>
+      <p>Faith • Family • Farming</p>
+    </div>
+  </div>
+
+<section id="KeyConcepts" class="project-page-section">
+    <h2>Key Concepts in Sustainable Farming</h2>
+    <p>Understanding the principles behind our farming practices is essential to appreciating our commitment to the land and community.</p>
+
+    <h3 style="font-size: 1.8rem; margin-top: 2rem; margin-bottom: 0.5rem;">1. Rotational Grazing</h3>
+    <p>**Rotational Grazing** involves moving livestock systematically from one pasture section to another. This prevents overgrazing, allowing grass to fully recover, which improves soil health and carbon sequestration.</p>
+
+    <h3 style="font-size: 1.8rem; margin-top: 2rem; margin-bottom: 0.5rem;">2. Soil Health</h3>
+    <p>We prioritize **Soil Health** by minimizing tillage, using cover crops, and adding natural compost. Healthy soil retains water better, requires fewer external inputs, and produces more nutrient-dense food.</p>
+
+    <h3 style="font-size: 1.8rem; margin-top: 2rem; margin-bottom: 0.5rem;">3. Farm-to-Table Model</h3>
+    <p>Our **Farm-to-Table Model** means our products go directly from our fields to your home. This ensures maximum freshness and minimizes the environmental impact associated with long-distance shipping.</p>
+
+    </section>
+
+<section id="References" class="project-page-section" style="background-color: #f5f0e1;">
+    <h2>References & Resources</h2>
+    <p>Sources used for the creation of this website and recommended learning resources.</p>
+
+    <h3 style="font-size: 1.8rem; margin-top: 2rem; margin-bottom: 0.5rem; text-align: left;">Content Sources</h3>
+    <ul style="list-style-type: disc; margin-left: 2rem; padding: 0;">
+        <li>Chase 'n Grace Farm. All proprietary content, including images and mission statements, provided by the farm owners.</li>
+        <li>Photographic assets sourced from private collection, 2024-2025.</li>
+    </ul>
+
+    <h3 style="font-size: 1.8rem; margin-top: 2rem; margin-bottom: 0.5rem; text-align: left;">Web Development Resources</h3>
+    <ul style="list-style-type: disc; margin-left: 2rem; padding: 0;">
+        <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a>: The authoritative source for HTML and CSS documentation.</li>
+        <li><a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a>: Used to ensure code compliance.</li>
+    </ul>
+</section>
+
+<section id="AboutMe" class="project-page-section">
+    <h2>About the Developer</h2>
+    <p>This page serves as the required introduction to the student who developed this website.</p>
+
+    <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+        <p>Hello! My name is [Your Name], and I am a student in IT3203: Introduction to Web Development at Kennesaw State University.</p>
+        
+        <h3 style="font-size: 1.8rem; margin-top: 2rem; margin-bottom: 0.5rem;">Project Goal:</h3>
+        <p>The goal of this Milestone 1 project was to apply fundamental HTML and CSS principles, including semantic markup, Flexbox, and CSS Grid, to build a multi-page, professional website promoting a fictional or real business (Chase 'n Grace Farm).</p>
+        
+        <h3 style="font-size: 1.8rem; margin-top: 2rem; margin-bottom: 0.5rem;">Technologies Demonstrated:</h3>
+        <ul style="list-style-type: disc; margin-left: 2rem; padding: 0;">
+            <li>Semantic HTML5 Structure</li>
+            <li>Responsive Design principles</li>
+            <li>Advanced CSS Layouts (Flexbox for navigation, Grid for products/gallery)</li>
+            <li>Consistent typographic and color scheme management</li>
+        </ul>
+    </div>
+</section>
+
+<section id="Contact">
+  </section>
+
+<footer>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!-- media queries -->
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+            @media screen and (width: 600px) {
+                body {
+                    color: purple;
+                }
+            }
+
+            /* Using ranged syntax*/
+            @media (min-width: 30em) and (max-width: 50em) {
+                body {
+                    background-color: lightblue;
+                }
+            }
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                *{box-sizing: border-box;}
+                body {
+                    font-family: Arial, sans-serif;
+                    font-size: 17px;
+                }
+                .grid-container {
+                    display: grid;
+                    grid-template-areas:
+                    'header'
+                    'menu'
+                    'main'
+                    'facts'
+                    'footer';
+                    back-ground-color: white;
+                    gap: 10px;
+                }
+                .header>h1{
+                    font-size: 40px;
+                    .menu ul {
+                        grid-area
+                    }
+                }
+            
+        </style>
+    </head>
+    <body>
+    <p> One November night in the year 1782, so the story runs, two brothers sat over 
+        their winter fire in the little French town of Annonay, watching the grey 
+        smoke-wreaths from the hearth curl up the wide chimney.</p>
+    </body>
+</html>
+

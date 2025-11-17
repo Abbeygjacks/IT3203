@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>JavaScript if statements</h1>
+    <p id="demo"></p>
+    <script>
+        let age = 6;
+        let text; "Unknown";
+        if (age >= 21){
+            text = "Adult";
+        } else {
+            text = "Minor";
+        }
+        document.getElementById("demo").innerHTML = "The group is " + text;
+    </script>
+
+    <h1>JavaScript loops</h1>
+    <h2>for loop</h2>
+    <p id="demo2"></p>
+    <script>
+        let text2 = "";
+        for (let i = 0; i < 5; i++) {
+            text2 += "The number is " + i + "<br>";
+        }
+        document.getElementById("demo2").innerHTML = text2;
+    </script>
+
+    <h2>while loop</h2>
+    <p id="demo5"></p>
+    <script>
+        let text5 = "";
+        let j = 0;
+        while (j < 10) {
+            text5 += "The number is " + j + "<br>";
+            j++;
+        }
+        document.getElementById("demo5").innerHTML = text5;
+    </script>
+
+    <h2>The Do While Loop</h2>
+    <p id="demo6"></p>
+    <script>
+        let text6 = "";
+        let k = 0;
+        do {
+            text6 += "The number is " + k + "<br>";
+            k++;
+        } while (k < 10);
+        document.getElementById("demo6").innerHTML = text6;
+    </script>
+
+    <h1>JavaScript break</h1>
+    <h2>The break Statement in a Loop</h2>
+    <p>Break the loop when the loop counter is 3:</p>
+    <p id="demo3"></p>
+    <script>
+        let text3 = "";
+        for (let i = 0; i < 10; i++) {
+            if (i === 3) { break; }
+            text3 += "The number is " + i + "<br>";
+        }
+        document.getElementById("demo3").innerHTML = text3;
+    </script>
+
+    <h1>JavaScript Functions</h1>
+    <p>Call a function to compute the product of p1 and p2 and return the result:</p>
+    <p id="demo4"></p>
+    <script>
+        // Function to compute the product of p1 and p2
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+        let result = myFunction(20, 89);
+        document.getElementById("demo4").innerHTML ="The result is: " + result;
+    </script>
+
+    
+
+</body>
+</html>

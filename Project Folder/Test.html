@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chase 'n Grace Farm | Home</title>
+  <link rel="icon" type="image/x-icon" href="C:\Users\abbag\Downloads\favicon.ico">
+</head>
+
+<!-- Google Font for cursive style -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ---------- GLOBAL STYLES ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #faf9f7;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ---------- HEADER / NAV ---------- */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.2); /* transparent overlay */
+}
+header img {
+  height: 50px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+nav a {
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #d6b58c;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+
+  width: 100%;   /* makes the image as wide as the screen */
+  height: auto;  /* keeps the correct aspect ratio */
+  display: block; /* removes tiny gaps under images */
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+.hero-text {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+}
+.hero-text h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+/* ---------- CONTENT BELOW HERO ---------- */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+section h2 {
+  color: #5c3d2e;
+  margin-bottom: 1rem;
+}
+section p {
+  line-height: 1.6;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #e7dcc8;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #5c3d2e;
+  font-weight: 500;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ---------- HEADER ---------- -->
+<header>
+  <img src="C:\Users\abbag\Downloads\Chase n grace farm logo.png" alt="Chase 'n Grace Farm Logo">
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#our-story">Our Story</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ---------- HERO ---------- -->
+<section id="home" class="hero">
+  <img src="C:\Users\abbag\Downloads\DSC_0100 (3).JPG" alt="Family at Chase 'n Grace Farm">
+  <div class="hero-text">
+    <h1>CHASE 'n GRACE FARM</h1>
+  </div>
+</section>
+
+<!-- ---------- OUR STORY ---------- -->
+<section id="our-story">
+  <h2>Our Story</h2>
+  <p>
+    To become more self-sufficient after years of working in the technology world,
+    our family decided to move to rural West Virginia and start a simpler life.
+  </p>
+</section>
+
+<!-- ---------- PRODUCTS ---------- -->
+<section id="products">
+  <h2>Our Products</h2>
+  <p>We offer a variety of farm products including hay bales, lavender, and seasonal flowers — all grown with care and faith.</p>
+</section>
+
+<!-- ---------- GALLERY ---------- -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <p>Explore moments from our family farm — the animals, the fields, and the beauty of simple living.</p>
+</section>
+
+<!-- ---------- CONTACT ---------- -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: <strong>chasengracesfarm@gmail.com</strong></p>
+  <p>Address: <strong>493 County Line Rd, Murray, GA 30724</strong></p>
+  <p>Phone: <strong>(678) 571-2952</strong></p>
+</section>
+
+<footer>
+  <p>This is a class project for IT 3203 Web Development | 
+  <a href="https://ksuweb.github.io/IT3203/" target="_blank">Course Site</a></p>
+</footer>
+
+</body>
+</html>
