@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chase 'n Grace Farm Quiz</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ====== QUIZ PAGE STYLES ====== */
+
+/* Page background + font */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #faf9f7; /* soft cream */
+  color: #2a2a25; /* dark olive-brown text */
+  padding: 2rem;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* Quiz title */
+h1 {
+  text-align: center;
+  color: #4b4a3e; /* olive tone */
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* back to home link */
+a.back-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #a3917b;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+a.back-link:hover {
+  color: #6d5f49;
+}
+
+/* Each question block */
+.question1,
+.question2,
+.question3,
+.question4,
+.question5 {
+  background-color: #f1eee4; /* light beige background */
+  border: 1px solid #d8d3c4;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Question text */
+.question1 label,
+.question2 label,
+.question3 p,
+.question4 p,
+.question5 p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: #6b694f; /* gives them an olive tint */
+}
+
+/* Buttons */
+button {
+  background-color: white;
+  color: #2a2a25;
+  border: 1.5px solid #2a2a25;
+  border-radius: 2rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+}
+
+button:hover {
+  background-color: #2a2a25;
+  color: white;
+}
+
+/* Results section */
+#results {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
+}
+
+/* mobile friendly */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  button {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+    <h1>Chase 'n Grace Farm Quiz Self-Assessment Quiz </h1>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+
+    <!-- Quiz Questions -->
+     <form id="quizForm">
+
+     <!-- QUESTION 1: fill in the blank -->
+        <div class="question1">
+            <label>1. Chase 'n Grace Farm is named after _____? </label><br>
+            <input type="text" id="q1" name="q1" required>
+        </div>
+
+        <!-- QUESTION 2: one choice -->
+        <div class="question2">
+            <label>2. Where is Chase 'n Grace Farm located?</label><br>
+            <input type="radio" id="q2a" name="q2" value="A" required>
+            <label for="q2a">A. Northwest Georgia</label><br>
+            <input type="radio" id="q2b" name="q2" value="B">
+            <label for="q2b">B. West Virginia</label><br>
+            <input type="radio" id="q2c" name="q2" value="C">
+            <label for="q2c">C. Chattanooga, Tennessee</label><br>
+        </div>
+
+        <!-- QUESTION 3: multiple choice -->
+         <div class="question3">
+            <p>3. What kinds of pets do we have on our farm?</p>
+            <input type="radio" id="q3a" name="q3" value="A">
+            <label for="q3a">A. Dogs</label><br>
+            <input type="radio" id="q3b" name="q3" value="B">
+            <label for="q3b">B. Goats</label><br>
+            <input type="radio" id="q3c" name="q3" value="C">
+            <label for="q3c">C. Two farm cats</label><br>
+        </div>
+
+        <!-- QUESTION 4: one choice-->
+         <div class="question4">
+            <p>4. What is the main goal of Chase 'n Grace Farm?</p>
+            <input type="radio" id="q4a" name="q4" value="A" required>
+            <label for="q4a">A. Build a commercial farm</label><br>
+            <input type="radio" id="q4b" name="q4" value="B">
+            <label for="q4b">B. Live simply and share our love for farming</label><br>
+            <input type="radio" id="q4c" name="q4" value="C">
+            <label for="q4c">C. Move to the city</label>
+        </div>
+
+        <!-- QUESTION 5: multiple choice -->
+         <div class="question5">
+            <p>5. What kinds of products do we sell on our farm? (select all that apply)</p>
+            <input type="checkbox" id="q5a" name="q5" value="A">
+            <label for="q5a">A. Fresh eggs</label><br>
+            <input type="checkbox" id="q5b" name="q5" value="B">
+            <label for="q5b">B. Lavender</label><br>
+            <input type="checkbox" id="q5c" name="q5" value="C">
+            <label for="q5c">C. Tomatoes</label><br>
+            <input type="checkbox" id="q5d" name="q5" value="D">
+            <label for="q5d">D. Hay</label>
+         </div>
+
+         <!-- Submit Button and reset quiz -->
+         <button type="button" onclick="checkQuiz()">Submit</button>
+         <button type="reset" onclick="resetQuiz()">Reset</button>
+     </form>
+
+        <!-- Results Section -->
+        <div id="results"></div>
+
+        <!-- javascript section-->
+        <script>
+            /* Function to check the quiz answers: checkQuiz()
+               Purpose: Validate the user's answers and display the results. */
+
+            function checkQuiz() {
+                let score = 0; // counter for correct answers
+                let totalQuestions = 5; // total number of questions
+                let results = document.getElementById("results");
+                results.innerHTML = ""; // Clear previous results
+
+                // Get user answers
+                // QUESTION 1
+                let q1 = document.getElementById("q1").value.trim().toLowerCase(); //sets typed in value to lowercase
+                if (q1 === "children" || q1 === "kids") {
+                    score++; // adds to score if correct
+                    results.innerHTML += "<p class='correct'>Question 1: Correct!</p>";
+                } else { // does not add to score if incorrect
+                    results.innerHTML += "<p class='incorrect'>Question 1: Incorrect. The correct answer is: 'children' or 'kids'.</p>";
+                }
+
+                // QUESTION 2
+                let q2 = document.querySelector('input[name="q2"]:checked') ? document.querySelector('input[name="q2"]:checked').value : "";
+                if (q2 === "A") {
+                    score++;
+                    results.innerHTML += "<p class='correct'>Question 2: Correct!</p>";
+                } else {
+                    results.innerHTML += "<p class='incorrect'>Question 2: Incorrect. The correct answer is: A. Northwest Georgia.</p>";
+                }
+
+                // QUESTION 3
+                let q3 = document.querySelector('input[name="q3"]:checked') ? document.querySelector('input[name="q3"]:checked').value : "";
+                if (q3 === "C") {
+                    score++;
+                    results.innerHTML += "<p class='correct'>Question 3: Correct!</p>";
+                } else {
+                    results.innerHTML += "<p class='incorrect'>Question 3: Incorrect. The correct answer is: C. Two farm cats.</p>";
+                }
+
+                // QUESTION 4
+                let q4a = document.getElementById("q4a").checked;
+                let q4b = document.getElementById("q4b").checked;
+                let q4c = document.getElementById("q4c").checked;
+                if (!q4a && q4b && !q4c) {
+                    score++;
+                    results.innerHTML += "<p class='correct'>Question 4: Correct!</p>";
+                } else {
+                    results.innerHTML += "<p class='incorrect'>Question 4: Incorrect. The correct answer is: B. Live simply and share our love for farming.</p>";
+                }
+
+                // QUESTION 5
+                let q5a = document.getElementById("q5a").checked;
+                let q5b = document.getElementById("q5b").checked;
+                let q5c = document.getElementById("q5c").checked;
+                let q5d = document.getElementById("q5d").checked;
+                if (q5a && q5b && q5c && q5d ) { // all questions are correct
+                    score++;
+                    results.innerHTML += "<p class='correct'>Question 5: Correct!</p>";
+                } else {
+                    results.innerHTML += "<p class='incorrect'>Question 5: Incorrect. The correct answers are: A. Fresh eggs, B. Lavender, C. Tomatoes, and D. Hay.</p>";
+                }
+
+                // Check answers
+                let pass = score >= 3; // pass if score is 3 or more
+                let color = pass ? "green" : "red"; // green for pass, red for fail
+                results.innerHTML += `<h2 style="color:${color}">Your Score: ${score} out of ${totalQuestions} - ${pass ? "Pass ✅" : "Fail ❌"}</h2>`;
+            }
+
+            /* Function to reset the quiz: resetQuiz()
+               Purpose: Clear the results section when the quiz is reset. */
+            function resetQuiz() {
+                document.getElementById("results").innerHTML = "";
+            }
+        </script>
