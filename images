@@ -1,0 +1,102 @@
+<!-- RIGHT SIDE IMAGES -->
+<div class="images">
+  <img src="images/Chase n grace farm logo.png" alt="Chase 'n Grace Farm Logo">
+  <img src="images/DSC_0100 (2).JPG" alt="Farm Image">
+  <img src="images/PXL_20250727_005821452~2.jpg" alt="Tractor at sunset">
+  <img src="images/DSC_0268.JPG" alt="Farmer portrait">
+  <img src="images/PXL_20250816_131420804.jpg" alt="Chickens on the farm">
+  <img src="images/seniorphotos2025 (41 of 201).jpg" alt="Portrait">
+</div>
+
+<section id="Products">
+  <h2>Our Products</h2>
+  <p>We offer a variety of fresh, farm-to-table products including flowers, organic vegetables, 
+     and hay. All our products are cultivated with care and a commitment to sustainability.</p>
+  
+  <div class="products-grid">
+    
+    <div class="product-card">
+      <img src="images/7125.jpg" alt="Round Hay Bales">
+      <h3>Round Hay Bales</h3>
+      <button onclick="window.location.href='roundhaybales.html'">Shop now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/IMG_20250604_190329256.jpg" alt="Square Hay Bales">
+      <h3>Square Hay Bales</h3>
+      <button onclick="window.location.href='squarehaybales.html'">Shop now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/IMG_20241126_153016.jpg" alt="Lavender">
+      <h3>Lavender</h3>
+      <button onclick="window.location.href='lavender.html'">Shop now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/PXL_20250720_155417945.jpg" alt="Lisianthus">
+      <h3>Lisianthus</h3>
+      <button onclick="window.location.href='lisianthus.html'">Shop now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/PXL_20240914_160514789.MP (1).jpg" alt="Zinnias">
+      <h3>Zinnias</h3>
+      <button onclick="window.location.href='zinnias.html'">Shop now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/PXL_20250701_165505872.MP.jpg" alt="Tomatoes">
+      <h3>Tomatoes</h3>
+      <button onclick="window.location.href='tomatoes.html'">Shop now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/IMG_20251031_113905.jpg" alt="Eggs">
+      <h3>Eggs</h3>
+      <button onclick="window.location.href='eggs.html'">Shop now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/received_721584050254584.jpeg" alt="Soap">
+      <h3>Soap</h3>
+      <button onclick="window.location.href='soap.html'">Shop now</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="MotionGallery">
+  <h2>Gallery</h2>
+  <p>Explore more moments from life on the farm.</p>
+
+  <div class="scroll-gallery">
+    <div class="scroll-gallery-track">
+
+      <img src="images/DSC_0043 (1).JPG" alt="Owners holding sign">
+      <img src="images/Tezza_2025_02_02_210511718.jpg" alt="Greenhouse">
+      <img src="images/Tezza_2025_02_02_210000296.jpg" alt="Greenhouse portraits">
+      <img src="images/Tezza_2025_02_02_094849067.jpg" alt="Tractor">
+      <img src="images/IMG_20241015_130557_248.webp" alt="Lavender">
+      <img src="images/DSC_0624.JPG" alt="Hay">
+      <img src="images/DSC_0299~2 (1).JPG" alt="Cats">
+
+      <!-- Duplicates -->
+      <img src="images/DSC_0043 (1).JPG" alt="Owners holding sign">
+      <img src="images/Tezza_2025_02_02_210511718.jpg" alt="Greenhouse">
+      <img src="images/Tezza_2025_02_02_210000296.jpg" alt="Greenhouse portraits">
+      <img src="images/Tezza_2025_02_02_094849067.jpg" alt="Tractor">
+      <img src="images/IMG_20241015_130557_248.webp" alt="Lavender">
+      <img src="images/DSC_0624.JPG" alt="Hay">
+      <img src="images/DSC_0299~2 (1).JPG" alt="Cats">
+
+    </div>
+  </div>
+</section>
+
+<section id="Contact">
+  <div class="contact-hero">
+    <img src="images/DSC_0246.JPG" alt="Cows in pasture" class="contact-bg">
+    <img src="images/Chase n grace farm logo.png" alt="Chase 'n Grace Farm Logo">
+  </div>
+</section>
